@@ -2,6 +2,7 @@ import './assets/css/app.css';
 import Video from './components/Video.js';
 import React, {useState, useEffect} from "react"
 import axios from "./components/Axios.js"
+import Navbar from './components/Navbar';
 
 function App() {
   const [videos, setVideos] = useState([]); 
@@ -30,6 +31,8 @@ function App() {
           likes = {video.likes}/>
         ))}
       </div>
+
+      <Navbar />
     </div>
   );
 }
