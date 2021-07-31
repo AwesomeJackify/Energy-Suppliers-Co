@@ -20,13 +20,14 @@ function App() {
   return (
     <div className="app">
       <div className="app__videos">
-        {videos.map(({url, channel, description, song, likes}) => (
+        {videos.map((video) => (
           <Video 
-          url={url}
-          channel = {channel}
-          description = {description}
-          song = {song}
-          likes = {likes}/>
+          key = {video.name}
+          url={video.url}
+          channel = {video.channel}
+          description = {video.description}
+          song = {video.song}
+          likes = {video.likes}/>
         ))}
       </div>
     </div>
