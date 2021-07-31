@@ -27,4 +27,5 @@ html {
 .app__videos {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  position: relative;
 }
