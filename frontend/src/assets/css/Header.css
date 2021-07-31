@@ -1,9 +1,8 @@
 .header {
 	position: fixed;
-	top: 2%;
-	right: 0;
+	top: 15px;	
+	left: 140px;
 	z-index: 2;
-	width: 60%;
 }
 
 .header__tagArea {
