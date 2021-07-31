@@ -4,7 +4,7 @@ import VideoFooter from './VideoFooter';
 import VideoSidebar from './VideoSidebar';
 import Watermark from './Watermark';
 
-export default function Video() {
+export default function Video({url, channel, description, song, likes}) {
     const videoRef = useRef(null);
     const [playing, setPlaying] = useState(false);
 
@@ -23,12 +23,12 @@ export default function Video() {
 
     return (
         <div className="video">
-            <video className="video__player" loop preload="metadata" muted playsInline ref={videoRef} onClick={handleVideoPress} type="video/mp4" src={"https://download1077.mediafire.com/0z9h25lzceqg/naufbowg5er1qzm/Jalen+Green+s+NBA+Inspiration+%F0%9F%92%AF+shorts_360P.mp4" + thumbnail}>
+            <video className="video__player" loop preload="metadata" muted playsInline ref={videoRef} onClick={handleVideoPress} type="video/mp4" src={url + thumbnail}>
                 Your browser does not support video
             </video>
 
-            <VideoSidebar />
-            <VideoFooter />
+            <VideoSidebar  likes={likes}/>
+            <VideoFooter channel={channel} description={description}song={song}/>
 
             <Watermark />
         </div>

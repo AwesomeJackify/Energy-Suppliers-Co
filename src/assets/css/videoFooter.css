@@ -1,6 +1,6 @@
 .videoFooter {
   position: relative;
-  bottom: min(15em, 220px);
+  bottom: min(15em, 240px);
   color: white;
   margin-left: 40px;
   display: flex;
