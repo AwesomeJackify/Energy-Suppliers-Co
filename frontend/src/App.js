@@ -2,7 +2,8 @@ import './assets/css/app.css';
 import Video from './components/Video.js';
 import React, {useState, useEffect} from "react"
 import axios from "./components/Axios.js"
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.js';
+import Header from "./components/Header.js";
 
 function App() {
   const [videos, setVideos] = useState([]); 
@@ -21,7 +22,8 @@ function App() {
   return (
     <div className="app">
       <div className="app__videos">
-        {videos.map((video) => (
+          <Header/>
+          {videos.map((video) => (
           <Video 
           key = {video.name}
           url={video.url}
@@ -31,7 +33,6 @@ function App() {
           likes = {video.likes}/>
         ))}
       </div>
-
       <Navbar />
     </div>
   );
