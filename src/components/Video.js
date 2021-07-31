@@ -1,5 +1,8 @@
 import React, { useRef, useState } from 'react'
 import "../assets/css/video.css"
+import VideoFooter from './VideoFooter';
+import VideoSidebar from './VideoSidebar';
+import Watermark from './Watermark';
 
 export default function Video() {
     const videoRef = useRef(null);
@@ -23,6 +26,11 @@ export default function Video() {
             <video className="video__player" loop preload="metadata" muted playsInline ref={videoRef} onClick={handleVideoPress} type="video/mp4" src={"https://download1077.mediafire.com/0z9h25lzceqg/naufbowg5er1qzm/Jalen+Green+s+NBA+Inspiration+%F0%9F%92%AF+shorts_360P.mp4" + thumbnail}>
                 Your browser does not support video
             </video>
+
+            <VideoSidebar />
+            <VideoFooter />
+
+            <Watermark />
         </div>
     )
 }

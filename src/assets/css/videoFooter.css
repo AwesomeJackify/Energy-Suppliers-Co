@@ -1,0 +1,50 @@
+.videoFooter {
+  position: relative;
+  bottom: min(15em, 220px);
+  color: white;
+  margin-left: 40px;
+  display: flex;
+}
+
+.videoFooter__text {
+  flex: 1;
+}
+
+.videoFooterText > p {
+  padding-bottom: 20px;
+}
+
+.videoFooterText > h3 {
+  padding-bottom: 20px;
+}
+
+.music {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.music img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.record {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: 50px;
+
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
