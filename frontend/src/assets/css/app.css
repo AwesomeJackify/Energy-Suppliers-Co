@@ -28,3 +28,10 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.progressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

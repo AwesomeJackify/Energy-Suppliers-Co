@@ -3,9 +3,11 @@ import Video from './components/Video.js';
 import React, {useState, useEffect} from "react"
 import axios from "./components/Axios.js"
 import Navbar from './components/Navbar';
+import ProgressBar from 'react-bootstrap/ProgressBar'
 
 function App() {
   const [videos, setVideos] = useState([]); 
+  const [progress, setProgress] = useState([]);
 
   useEffect(() => {
     async function fetchPosts() {
@@ -15,7 +17,15 @@ function App() {
       return response;
     }
 
+    async function fetchProgress() {
+      const response = await axios.get('/v2/progress')
+      setProgress(response.data)
+
+      return response;
+    }
+
     fetchPosts();
+    fetchProgress();
   }, [])
 
   return (
@@ -30,6 +40,8 @@ function App() {
           song = {video.song}
           likes = {video.likes}/>
         ))}
+
+      <ProgressBar className="progressBar" animated now={progress.progress} />
       </div>
 
       <Navbar />
