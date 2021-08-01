@@ -39,12 +39,11 @@
   animation-timing-function: linear;
 }
 
-
-.ticker{
+.ticker {
   right: 10px;
   position: relative;
   margin-right: 10%;
-} 
+}
 
 @keyframes spin {
   from {

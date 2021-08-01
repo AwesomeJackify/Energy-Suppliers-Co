@@ -5,10 +5,10 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import "../assets/css/navbar.css"
 
 
-function Navbar() {
+function Navbar1() {
     return (
-        <div className="navbar">
-            <div className="navbarItems">
+        <div className="navbar1">
+            <div className="navbarItems1">
                 <IconButton>    
                     <SmsIcon />
                 </IconButton>
@@ -20,4 +20,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default Navbar1

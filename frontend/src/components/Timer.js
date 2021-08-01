@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar'
+import "../assets/css/timer.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function Timer() {
   const [time, setTime] = useState({
@@ -19,7 +22,7 @@ function Timer() {
 
         nSeconds++;
 
-        if (nSeconds > 59) {
+        if (nSeconds < -10) {
           nMinutes++;
           nSeconds = 0;
         }
