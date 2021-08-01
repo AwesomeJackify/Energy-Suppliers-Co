@@ -1,19 +1,35 @@
-.navbar {
+.navbar1 {
   position: fixed;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   width: min(500px, 100%);
 }
 
-.navbarItems {
+.navbarItems1 {
   margin: 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.navbarItems svg {
+.navbarItems1 img {
   padding: 0px 80px;
   color: white;
-  font-size: 3rem;
+  width: 100px;
+}
+
+.MuiIconButton-root {
+  color: white !important;
+  font-size: 3rem !important;
+  width: 50px;
+  padding: auto 50px !important;
+}
+
+.MuiSvgIcon-root {
+  font-size: 3rem !important;
+  padding: auto 50px !important;
+}
+
+button {
+  padding: auto 100px !important;
 }
