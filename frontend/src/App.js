@@ -21,9 +21,13 @@ function App() {
   }, [])
 
   return (
-    <div className="app">
+    <div className="background">
+        <div className="app">
+      <Header/>
       <div className="app__videos">
+
           <Header />
+
           {videos.map((video) => (
           <Video 
           key = {video.name}
@@ -39,6 +43,8 @@ function App() {
       <Navbar />
       <Timer />
     </div>
+    </div>
+    
   );
 }
 

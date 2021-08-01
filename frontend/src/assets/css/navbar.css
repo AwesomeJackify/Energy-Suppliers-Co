@@ -1,19 +1,20 @@
 .navbar {
   position: fixed;
   bottom: 0;
-  width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+  width: min(500px, 100%);
 }
 
 .navbarItems {
-  width: min(500px, 100%);
-  margin: 0px auto;
+  margin: 0px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .navbarItems svg {
+
+  padding: 0px 80px;
   color: white;
   font-size: 3rem;
 }
