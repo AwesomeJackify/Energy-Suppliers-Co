@@ -1,0 +1,39 @@
+.header {
+	position: fixed;
+	top: 15px;	
+	left: 140px;
+	z-index: 2;
+}
+
+.header__tagArea {
+	 display: flex;
+	 background-color: transparent;
+}
+ .header__tagArea--tagContainer {
+	 display: flex;
+	 background-color: transparent;
+}
+ input {
+	 margin-left: 1%;
+	 padding: 3px;
+	 width: 100px;
+	 border: none;
+	 outline: none;
+	 background: transparent;
+}
+ .box {
+	 width: 320px;
+	 padding: 3px;
+	 border-radius: 100px;
+	 border: 2px solid #fff;
+	 margin: 10px;
+	 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(100, 100, 100, 0.5));
+}
+ .userInput {
+	 color: white;
+	 font-size: 15px;
+}
+ ::placeholder {
+	 color: rgba(255, 255, 255, 0.5);
+}
+ 

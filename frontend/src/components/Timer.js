@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import "../assets/css/timer.css"
+<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
+=======
+>>>>>>> a8bfec673aa750376a66cffa1e9d067285812cd8
 
 function Timer() {
   const [time, setTime] = useState({
@@ -54,4 +57,8 @@ function Timer() {
   );
 };
 
+<<<<<<< HEAD
 export default Timer
+=======
+export default Timer
+>>>>>>> a8bfec673aa750376a66cffa1e9d067285812cd8

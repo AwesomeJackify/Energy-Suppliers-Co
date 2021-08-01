@@ -4,7 +4,10 @@ import React, {useState, useEffect} from "react"
 import axios from "./components/Axios.js"
 import Header from "./components/Header.js";
 import Timer from "./components/Timer.js";
+<<<<<<< HEAD
 import Navbar1 from './components/Navbar1.js';
+=======
+>>>>>>> a8bfec673aa750376a66cffa1e9d067285812cd8
 
 function App() {
   const [videos, setVideos] = useState([]); 
@@ -34,8 +37,14 @@ function App() {
           song = {video.song}
           likes = {video.likes}/>
         ))}
+
+      
       </div>
+<<<<<<< HEAD
       <Navbar1 />
+=======
+      <Navbar />
+>>>>>>> a8bfec673aa750376a66cffa1e9d067285812cd8
       <Timer />
     </div>
     </div>
