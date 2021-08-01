@@ -24,7 +24,6 @@ function App() {
         <div className="app">
       <Header/>
       <div className="app__videos">
-          
           {videos.map((video) => (
           <Video 
           key = {video.name}
