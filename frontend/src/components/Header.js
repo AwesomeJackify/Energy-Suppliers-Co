@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../assets/css/Header.css";
+import "../assets/css/header.css";
 import ReactDOM from "react-dom";
 import Tag from './Tag/Tag';
 
